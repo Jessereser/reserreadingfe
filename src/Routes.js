@@ -1,7 +1,14 @@
-//import AuthenticationPage from "reserreadingfe/src/Components/Pages/Authentication/index";
+import {Route} from "react-router-dom";
+import AuthenticationPage from "./Components/Pages/Authentication";
+import RegistrationPage from "./Components/Pages/Registration";
 
-//<Route></Route>
 
-//<Route exact path="./Components/Authentication/index">
-  // <AuthenticationPage />
-//</Route>
+
+function Routes(){
+  return <div>
+    <Route path="/authentication/index" component={AuthenticationPage}/>
+    <Route path="/registration/index" component={RegistrationPage}/>
+  </div>
+}
+
+export default Routes;
