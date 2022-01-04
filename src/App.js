@@ -1,11 +1,14 @@
-import AuthenticationPage from "./Components/Pages/Authentication/index"
+import Router from "./Router";
+
 
 
 function App() {
 
   return (
       <div className="App">
-        <AuthenticationPage />
+          <div className="content">
+              <Router/>
+          </div>
       </div>
   );
 }
